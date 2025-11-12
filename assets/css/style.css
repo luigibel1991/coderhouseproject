@@ -6,7 +6,7 @@
 body {
   max-width: 1280px;
   width: 100%;
- 
+
   margin: auto;
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -185,15 +185,14 @@ main h2 {
   position: absolute;
   left: 0;
   top: 0;
-  background-color:rgb(127, 232, 255);
+  background-color: rgb(127, 232, 255);
   opacity: 0;
-  
 }
 
 .card-2:hover::after {
-  opacity: 0.20;
-cursor: pointer;} 
-
+  opacity: 0.2;
+  cursor: pointer;
+}
 
 /* curiosidades  */
 .curiosidades {
@@ -237,13 +236,16 @@ cursor: pointer;}
   gap: 16px;
   border: 1px solid #8bc0e0;
 }
+aside {
+  border-left: 1px solid #8bc0e0;
+padding: 8px;}
 .historia1 aside ul {
   list-style: none;
 }
 .historia1 aside ul li a {
   text-decoration: none;
 }
-.historia1 figure {
+.historia1 figure {padding: 8px;
   justify-self: center;
 }
 /* Personajes */
