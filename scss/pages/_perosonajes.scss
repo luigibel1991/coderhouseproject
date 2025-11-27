@@ -1,0 +1,23 @@
+/* Personajes */
+.personajes {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  border: 1px #8bc0e0 solid;
+  padding: 16px;
+
+  div {
+    flex: 1;
+  }
+
+  p {
+    flex: 5;
+  }
+
+  img {
+    width: 150px;
+    height: 150px;
+  }
+}

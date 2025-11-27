@@ -1,0 +1,53 @@
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 80px;
+  max-width: 1280px;
+  width: 100%;
+  background-color: #8bc0e0;
+  justify-content: space-between;
+  text-align: center;
+  padding: 16px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+
+  h2 {
+    flex: 1;
+    text-align: left;
+    padding: 16px;
+  }
+
+  p {
+    flex: 1;
+    padding: 16px;
+  }
+
+  nav {
+    flex: 1;
+    text-align: right;
+    padding: 16px;
+
+    .social-links {
+      ul {
+        display: flex;
+        justify-content: flex-end;
+        gap: 8px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        li {
+          a {
+            display: block;
+
+            img {
+              width: 20px;
+              height: 20px;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}

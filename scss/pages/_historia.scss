@@ -1,0 +1,27 @@
+/* historia */
+.historia1 {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 16px;
+    border: 1px solid #8bc0e0;
+
+    figure {
+        padding: 8px;
+        justify-self: center;
+    }
+
+    aside {
+        border-left: 1px solid #8bc0e0;
+        padding: 8px;
+
+        ul {
+            list-style: none;
+
+            li {
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

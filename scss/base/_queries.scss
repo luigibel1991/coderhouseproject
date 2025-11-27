@@ -1,0 +1,179 @@
+/* breakpoint Tablet*/
+@media (max-width: 991px) {
+    header .hamburguesa {
+        display: block;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .top-bar {
+        align-items: center;
+        gap: 16px;
+    }
+
+    .top-bar p {
+        display: none;
+    }
+
+    #grilla-1 {
+        grid-template-columns: 1fr;
+    }
+
+    /* Personajes más compacto */
+    .personajes {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .personajes div,
+    .personajes p {
+        width: 100%;
+        text-align: center;
+    }
+
+    #perfil {
+        grid-template-columns: 1fr;
+        /* una columna */
+        gap: 12px;
+    }
+
+    .autor {
+        padding: 12px;
+        text-align: center;
+        /* centra texto y títulos */
+    }
+
+    .autor img {
+        max-width: 350px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 12px;
+        text-align: center;
+        max-height: none;
+    }
+
+    /* historia sin la barra lateral */
+    aside {
+        display: none;
+    }
+
+    footer h2,
+    footer p,
+    footer nav {
+        flex: none;
+        width: 100%;
+        padding: 8px 0;
+        text-align: center;
+    }
+
+    .social-links ul {
+        justify-content: center;
+        gap: 12px;
+    }
+}
+
+/* Breakpoint Mobile */
+@media (max-width: 576px) {
+    body {
+        font-size: 14px;
+    }
+
+    header .hamburguesa {
+        display: block;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .top-bar {
+        align-items: center;
+        gap: 16px;
+    }
+
+    .top-bar p {
+        display: none;
+    }
+
+    #grilla-1 {
+        grid-template-columns: 1fr;
+    }
+
+    .card-2 {
+        width: 100%;
+    }
+
+    /* Personajes más compacto */
+    .personajes {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .personajes div,
+    .personajes p {
+        width: 100%;
+        flex: unset;
+        text-align: center;
+    }
+
+    .personajes img {
+        width: 120px;
+    }
+
+    #perfil {
+        grid-template-columns: 1fr;
+        /* una columna */
+        gap: 8px;
+        border: none;
+    }
+
+    .autor {
+        padding: 8px;
+        text-align: center;
+        border: 0.5px solid #8bc0e0;
+        margin: 8px;
+    }
+
+    .autor img {
+        max-width: 250px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    /* main historia sin la barra lateral*/
+    aside {
+        display: none;
+    }
+
+    .historia1 img {
+        width: 70%;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 8px;
+    }
+
+    footer h2,
+    footer p,
+    footer nav {
+        flex: none;
+        width: 100%;
+        padding: 4px 0;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .social-links ul {
+        justify-content: center;
+        gap: 8px;
+    }
+}

@@ -1,0 +1,86 @@
+header {
+  background-color: #8bc0e0;
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  /* imagen del header */
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 1280px;
+    display: block;
+  }
+
+  /* menú hamburguesa */
+  .hamburguesa {
+    font-size: 32px;
+    display: none;
+    cursor: pointer;
+    margin-left: 0;
+  }
+
+  /* top bar */
+  .top-bar {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    gap: 16px;
+    flex: 1;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      padding-top: 10px;
+    }
+  }
+}
+
+/* NAV (fuera del header porque en tu HTML NO está dentro del header) */
+nav.navegation-menu {
+  background-color: #d3ebfd;
+  width: 100%;
+  height: fit-content;
+  justify-content: center;
+  margin: auto;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: 8px 0;
+
+    li {
+      flex: 1;
+      text-align: center;
+
+      a {
+        display: inline-block;
+        text-decoration: none;
+        color: #000;
+        padding: 8px 0;
+      }
+
+      &.elemento-de-navegacion:hover {
+        background-color: aqua;
+        cursor: pointer;
+      }
+
+      &.elemento-de-navegacion:active {
+        background-color: rgba(0, 123, 255, 0.642);
+      }
+
+      img {
+        max-width: 16px;
+        max-height: 16px;
+      }
+    }
+  }
+}

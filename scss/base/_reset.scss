@@ -1,0 +1,487 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1280px;
+  width: 100%;
+
+  margin: auto;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  background-color: #efefef;
+}
+header {
+  background-color: #8bc0e0;
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  /* imagen del header */
+  img {
+    width: 100%;
+    max-height: 200px;
+    max-width: 1280px;
+    display: block;
+  }
+
+  /* menú hamburguesa */
+  .hamburguesa {
+    font-size: 32px;
+    display: none;
+    cursor: pointer;
+    margin-left: 0;
+  }
+
+  /* top bar */
+  .top-bar {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    gap: 16px;
+    flex: 1;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      padding-top: 10px;
+    }
+  }
+}
+
+/* NAV */
+nav.navegation-menu {
+  background-color: #d3ebfd;
+  width: 100%;
+  height: fit-content;
+  justify-content: center;
+  margin: auto;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: 8px 0;
+
+    li {
+      flex: 1;
+      text-align: center;
+
+      a {
+        display: inline-block;
+        text-decoration: none;
+        color: #000;
+        padding: 8px 0;
+      }
+
+      &.elemento-de-navegacion:hover {
+        background-color: aqua;
+        cursor: pointer;
+      }
+
+      &.elemento-de-navegacion:active {
+        background-color: rgba(0, 123, 255, 0.642);
+      }
+
+      img {
+        max-width: 16px;
+        max-height: 16px;
+      }
+    }
+  }
+}
+/* main */
+main {
+  max-width: 1280px;
+  width: 100%;
+  margin-bottom: 32px;
+  gap: 16px;
+
+  p {
+    padding: 16px;
+  }
+
+  h2 {
+    padding-bottom: 8px;
+    margin: 16px 0;
+    border-bottom: #000000 1px solid;
+  }
+}
+/* main del index */
+#contendor {
+  max-width: 100%;
+  max-height: fit-content;
+  margin: auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  border: 1px solid #8bc0e0;
+  padding: 16px;
+  background-color: #ebebeb;
+
+  h3 {
+    text-align: center;
+    padding: 16px;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 16px;
+  }
+}
+
+#grilla-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* dos columnas iguales */
+  gap: 20px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px #8bc0e0 solid;
+}
+
+.card-2 {
+  background-color: #f5f5f5;
+  overflow: hidden;
+  text-align: center;
+  border: 1px #d3ebfd solid;
+  padding: 16px;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 8px;
+  }
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgb(127, 232, 255);
+    opacity: 0;
+  }
+
+  &:hover::after {
+    opacity: 0.2;
+    cursor: pointer;
+  }
+}
+/* curiosidades  */
+.curiosidades {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  border: 1px solid #8bc0e0;
+
+  article {
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* quienessomos */
+#perfil {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  width: 100%;
+  border: 1px solid #8bc0e0;
+
+  .autor {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    p {
+      padding: 0;
+    }
+  }
+}
+/* historia */
+.historia1 {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 16px;
+  border: 1px solid #8bc0e0;
+
+  figure {
+    padding: 8px;
+    justify-self: center;
+  }
+
+  aside {
+    border-left: 1px solid #8bc0e0;
+    padding: 8px;
+
+    ul {
+      list-style: none;
+
+      li {
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+/* Personajes */
+.personajes {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  border: 1px #8bc0e0 solid;
+  padding: 16px;
+
+  div {
+    flex: 1;
+  }
+
+  p {
+    flex: 5;
+  }
+
+  img {
+    width: 150px;
+    height: 150px;
+  }
+}
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 80px;
+  max-width: 1280px;
+  width: 100%;
+  background-color: #8bc0e0;
+  justify-content: space-between;
+  text-align: center;
+  padding: 16px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+
+  h2 {
+    flex: 1;
+    text-align: left;
+    padding: 16px;
+  }
+
+  p {
+    flex: 1;
+    padding: 16px;
+  }
+
+  nav {
+    flex: 1;
+    text-align: right;
+    padding: 16px;
+
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      li {
+        list-style: none;
+
+        a {
+          text-decoration: none;
+          display: block;
+
+          img {
+            width: 24px;
+            height: 24px;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* breakpoint Tablet*/
+@media (max-width: 991px) {
+  header .hamburguesa {
+    display: block;
+  }
+  header nav {
+    display: none;
+  }
+  .top-bar {
+    align-items: center;
+    gap: 16px;
+  }
+  .top-bar p {
+    display: none;
+  }
+  #grilla-1 {
+    grid-template-columns: 1fr;
+  }
+  /* Personajes más compacto */
+  .personajes {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .personajes div,
+  .personajes p {
+    width: 100%;
+    text-align: center;
+  }
+  #perfil {
+    grid-template-columns: 1fr; /* una columna */
+    gap: 12px;
+  }
+
+  .autor {
+    padding: 12px;
+    text-align: center; /* centra texto y títulos */
+  }
+
+  .autor img {
+    max-width: 350px;
+    height: auto;
+    margin: 0 auto;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    text-align: center;
+    max-height: none;
+  }
+  /* historia sin la barra lateral */
+  aside {
+    display: none;
+  }
+
+  footer h2,
+  footer p,
+  footer nav {
+    flex: none;
+    width: 100%;
+    padding: 8px 0;
+    text-align: center;
+  }
+
+  .social-links ul {
+    justify-content: center;
+    gap: 12px;
+  }
+}
+
+/* Breakpoint Mobile */
+@media (max-width: 576px) {
+  body {
+    font-size: 14px;
+  }
+  header .hamburguesa {
+    display: block;
+  }
+  header nav {
+    display: none;
+  }
+  .top-bar {
+    align-items: center;
+    gap: 16px;
+  }
+  .top-bar p {
+    display: none;
+  }
+  #grilla-1 {
+    grid-template-columns: 1fr;
+  }
+  .card-2 {
+    width: 100%;
+  }
+  /* Personajes más compacto */
+  .personajes {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .personajes div,
+  .personajes p {
+    width: 100%;
+    flex: unset;
+    text-align: center;
+  }
+
+  .personajes img {
+    width: 120px;
+  }
+  #perfil {
+    grid-template-columns: 1fr; /* una columna */
+    gap: 8px;
+    border: none;
+  }
+
+  .autor {
+    padding: 8px;
+    text-align: center;
+    border: 0.5px solid #8bc0e0;
+    margin: 8px;
+  }
+
+  .autor img {
+    max-width: 250px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  /* main historia sin la barra lateral*/
+  aside {
+    display: none;
+  }
+  .historia1 img {
+    width: 70%;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+  }
+
+  footer h2,
+  footer p,
+  footer nav {
+    flex: none;
+    width: 100%;
+    padding: 4px 0;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .social-links ul {
+    justify-content: center;
+    gap: 8px;
+  }
+}
