@@ -6,7 +6,7 @@
 
 
 @use "base/main";
-@use "base/queries";
+
 
 
 @use "components/header";
@@ -18,4 +18,4 @@
 @use "pages/quienessomos";
 @use "pages/historia";
 @use "pages/personajes";
-
+@use "utilities/queries";
