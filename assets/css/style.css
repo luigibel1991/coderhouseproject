@@ -32,7 +32,7 @@ header img {
   display: block;
 }
 
-  /* menú hamburguesa */
+/* menú hamburguesa */
 
 header .hamburguesa {
   font-size: 32px;
@@ -41,7 +41,7 @@ header .hamburguesa {
   margin-left: 0;
 }
 
-  /* top bar */
+/* top bar */
 
 header .top-bar {
   display: flex;
@@ -465,7 +465,7 @@ header img {
   display: block;
 }
 
-  /* menú hamburguesa */
+/* menú hamburguesa */
 
 header .hamburguesa {
   font-size: 32px;
@@ -474,7 +474,7 @@ header .hamburguesa {
   margin-left: 0;
 }
 
-  /* top bar */
+/* top bar */
 
 header .top-bar {
   display: flex;
@@ -723,6 +723,7 @@ footer nav .social-links ul {
   margin: 0;
   list-style: none;
 }
+
 footer nav .social-links ul li a {
   display: block;
 }
