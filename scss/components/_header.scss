@@ -1,5 +1,7 @@
+@use"../base/variables.scss" ;
+@use"../utilities/extend" ;
 header {
-    background-color: #8bc0e0;
+    background-color: $colorheader-footer ;
     width: 100%;
     padding: 16px;
     box-sizing: border-box;

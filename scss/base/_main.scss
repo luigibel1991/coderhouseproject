@@ -1,17 +1,12 @@
-/* main */
+@use"../utilities/extend";
 main {
-  max-width: 1280px;
-  width: 100%;
-  margin-bottom: 32px;
-  gap: 16px;
+  @extend %main-base;
 
   p {
-    padding: 16px;
+    @extend %main-parrafo;
   }
 
   h2 {
-    padding-bottom: 8px;
-    margin: 16px 0;
-    border-bottom: #000000 1px solid;
+    @extend %main-titulo;
   }
 }

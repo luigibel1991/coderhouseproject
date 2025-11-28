@@ -84,7 +84,7 @@ nav.navegation-menu ul li a {
   padding: 8px 0;
 }
 nav.navegation-menu ul li.elemento-de-navegacion:hover {
-  background-color: aqua;
+  background-color: #00ffff;
   cursor: pointer;
 }
 nav.navegation-menu ul li.elemento-de-navegacion:active {
