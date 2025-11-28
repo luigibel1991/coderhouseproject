@@ -1,14 +1,21 @@
-@use"base/reset";
-@use"components/header";
-@use"base/main";
-@use"pages/index";
-@use"pages/curiosidades";
-@use"pages/quienessomos";
-@use"pages/historia";
-@use"pages/perosonajes";
-@use"components/footer";
-@use"base/queries";
+
+@use "base/variables";
+@use "utilities/mixin" as m;
+@use "utilities/extend";
 
 
+@use "base/reset";
+@use "base/main";
+@use "base/queries";
 
+
+@use "components/header";
+@use "components/footer";
+
+
+@use "pages/index";
+@use "pages/curiosidades";
+@use "pages/quienessomos";
+@use "pages/historia";
+@use "pages/personajes";
 

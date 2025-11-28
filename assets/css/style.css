@@ -1,4 +1,22 @@
 @charset "UTF-8";
+/* variables de colores */
+main {
+  max-width: 1280px;
+  width: 100%;
+  margin-bottom: 32px;
+  gap: 16px;
+}
+
+main p {
+  padding: 16px;
+}
+
+main h2 {
+  padding-bottom: 8px;
+  margin: 16px 0;
+  border-bottom: #000000 1px solid;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -32,17 +50,13 @@ header img {
   display: block;
 }
 
-/* menú hamburguesa */
-
 header .hamburguesa {
   font-size: 32px;
   display: none;
   cursor: pointer;
   margin-left: 0;
 }
-
-/* top bar */
-
+  
 header .top-bar {
   display: flex;
   align-items: center;
@@ -84,7 +98,7 @@ nav.navegation-menu ul li a {
   padding: 8px 0;
 }
 nav.navegation-menu ul li.elemento-de-navegacion:hover {
-  background-color: #00ffff;
+  background-color: aqua;
   cursor: pointer;
 }
 nav.navegation-menu ul li.elemento-de-navegacion:active {
@@ -448,291 +462,6 @@ footer nav ul li a img {
     gap: 8px;
   }
 }
-header {
-  background-color: #8bc0e0;
-  width: 100%;
-  padding: 16px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  /* imagen del header */
-}
-header img {
-  width: 100%;
-  height: auto;
-  max-width: 1280px;
-  display: block;
-}
-
-/* menú hamburguesa */
-
-header .hamburguesa {
-  font-size: 32px;
-  display: none;
-  cursor: pointer;
-  margin-left: 0;
-}
-
-/* top bar */
-
-header .top-bar {
-  display: flex;
-  align-items: center;
-  padding: 8px 0;
-  gap: 16px;
-  flex: 1;
-}
-header .top-bar h1 {
-  font-size: 2rem;
-}
-header .top-bar p {
-  font-size: 1.2rem;
-  padding-top: 10px;
-}
-
-/* NAV (fuera del header porque en tu HTML NO está dentro del header) */
-nav.navegation-menu {
-  background-color: #d3ebfd;
-  width: 100%;
-  height: fit-content;
-  justify-content: center;
-  margin: auto;
-}
-nav.navegation-menu ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  list-style: none;
-  margin: 8px 0;
-}
-nav.navegation-menu ul li {
-  flex: 1;
-  text-align: center;
-}
-nav.navegation-menu ul li a {
-  display: inline-block;
-  text-decoration: none;
-  color: #000;
-  padding: 8px 0;
-}
-nav.navegation-menu ul li.elemento-de-navegacion:hover {
-  background-color: aqua;
-  cursor: pointer;
-}
-nav.navegation-menu ul li.elemento-de-navegacion:active {
-  background-color: rgba(0, 123, 255, 0.642);
-}
-nav.navegation-menu ul li img {
-  max-width: 16px;
-  max-height: 16px;
-}
-
-/* main */
-main {
-  max-width: 1280px;
-  width: 100%;
-  margin-bottom: 32px;
-  gap: 16px;
-}
-main p {
-  padding: 16px;
-}
-main h2 {
-  padding-bottom: 8px;
-  margin: 16px 0;
-  border-bottom: #000000 1px solid;
-}
-
-/* main del index */
-#contendor {
-  max-width: 100%;
-  max-height: fit-content;
-  margin: auto;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  max-width: 100%;
-  border: 1px solid #8bc0e0;
-  padding: 16px;
-  background-color: #ebebeb;
-}
-.card h3 {
-  text-align: center;
-  padding: 16px;
-}
-.card img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
-  padding-bottom: 16px;
-}
-
-#grilla-1 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* dos columnas iguales */
-  gap: 20px;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px #8bc0e0 solid;
-}
-
-.card-2 {
-  background-color: #f5f5f5;
-  overflow: hidden;
-  text-align: center;
-  border: 1px #d3ebfd solid;
-  padding: 16px;
-  position: relative;
-}
-.card-2 img {
-  width: 100%;
-  height: auto;
-  display: block;
-  padding: 8px;
-}
-.card-2::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-color: rgb(127, 232, 255);
-  opacity: 0;
-}
-.card-2:hover::after {
-  opacity: 0.2;
-  cursor: pointer;
-}
-
-/* curiosidades  */
-.curiosidades {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  flex-wrap: wrap;
-  border: 1px solid #8bc0e0;
-}
-.curiosidades article {
-  max-width: 1280px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-/* quienessomos */
-#perfil {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  width: 100%;
-  border: 1px solid #8bc0e0;
-}
-#perfil .autor {
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 16px;
-}
-#perfil .autor p {
-  padding: 0;
-}
-
-/* historia */
-.historia1 {
-  display: grid;
-  grid-template-columns: 4fr 1fr;
-  gap: 16px;
-  border: 1px solid #8bc0e0;
-}
-.historia1 figure {
-  padding: 8px;
-  justify-self: center;
-}
-.historia1 aside {
-  border-left: 1px solid #8bc0e0;
-  padding: 8px;
-}
-.historia1 aside ul {
-  list-style: none;
-}
-.historia1 aside ul li a {
-  text-decoration: none;
-}
-
-/* Personajes */
-.personajes {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  justify-content: center;
-  border: 1px #8bc0e0 solid;
-  padding: 16px;
-}
-.personajes div {
-  flex: 1;
-}
-.personajes p {
-  flex: 5;
-}
-.personajes img {
-  width: 150px;
-  height: 150px;
-}
-
-footer {
-  display: flex;
-  flex-wrap: wrap;
-  max-height: 80px;
-  max-width: 1280px;
-  width: 100%;
-  background-color: #8bc0e0;
-  justify-content: space-between;
-  text-align: center;
-  padding: 16px;
-  box-sizing: border-box;
-  text-transform: uppercase;
-}
-footer h2 {
-  flex: 1;
-  text-align: left;
-  padding: 16px;
-}
-footer p {
-  flex: 1;
-  padding: 16px;
-}
-footer nav {
-  flex: 1;
-  text-align: right;
-  padding: 16px;
-}
-footer nav .social-links ul {
-  display: flex;
-  justify-content: flex-end;
-  gap: 8px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-footer nav .social-links ul li a {
-  display: block;
-}
-footer nav .social-links ul li a img {
-  width: 20px;
-  height: 20px;
-  display: block;
-}
-
 /* breakpoint Tablet*/
 @media (max-width: 991px) {
   header .hamburguesa {
@@ -880,6 +609,271 @@ footer nav .social-links ul li a img {
     justify-content: center;
     gap: 8px;
   }
+}
+header {
+  background-color: #8bc0e0;
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* imagen del header */
+}
+header img {
+  width: 100%;
+  height: auto;
+  max-width: 1280px;
+  display: block;
+}
+
+header .hamburguesa {
+  font-size: 32px;
+  display: none;
+  cursor: pointer;
+  margin-left: 0;
+}
+
+  /* top bar */
+
+header .top-bar {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  gap: 16px;
+  flex: 1;
+}
+header .top-bar h1 {
+  font-size: 2rem;
+}
+header .top-bar p {
+  font-size: 1.2rem;
+  padding-top: 10px;
+}
+
+/* NAV (fuera del header porque en tu HTML NO está dentro del header) */
+nav.navegation-menu {
+  background-color: #d3ebfd;
+  width: 100%;
+  height: fit-content;
+  justify-content: center;
+  margin: auto;
+}
+nav.navegation-menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  margin: 8px 0;
+}
+nav.navegation-menu ul li {
+  flex: 1;
+  text-align: center;
+}
+nav.navegation-menu ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  padding: 8px 0;
+}
+nav.navegation-menu ul li.elemento-de-navegacion:hover {
+  background-color: aqua;
+  cursor: pointer;
+}
+nav.navegation-menu ul li.elemento-de-navegacion:active {
+  background-color: rgba(0, 123, 255, 0.642);
+}
+nav.navegation-menu ul li img {
+  max-width: 16px;
+  max-height: 16px;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 80px;
+  max-width: 1280px;
+  width: 100%;
+  background-color: #8bc0e0;
+  justify-content: space-between;
+  text-align: center;
+  padding: 16px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+footer h2 {
+  flex: 1;
+  text-align: left;
+  padding: 16px;
+}
+footer p {
+  flex: 1;
+  padding: 16px;
+}
+footer nav {
+  flex: 1;
+  text-align: right;
+  padding: 16px;
+}
+footer nav .social-links ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+footer nav .social-links ul li a {
+  display: block;
+}
+footer nav .social-links ul li a img {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+/* main del index */
+#contendor {
+  max-width: 100%;
+  max-height: fit-content;
+  margin: auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  border: 1px solid #8bc0e0;
+  padding: 16px;
+  background-color: #ebebeb;
+}
+.card h3 {
+  text-align: center;
+  padding: 16px;
+}
+.card img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 16px;
+}
+
+#grilla-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* dos columnas iguales */
+  gap: 20px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px #8bc0e0 solid;
+}
+
+.card-2 {
+  background-color: #f5f5f5;
+  overflow: hidden;
+  text-align: center;
+  border: 1px #d3ebfd solid;
+  padding: 16px;
+  position: relative;
+}
+.card-2 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 8px;
+}
+.card-2::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgb(127, 232, 255);
+  opacity: 0;
+}
+.card-2:hover::after {
+  opacity: 0.2;
+  cursor: pointer;
+}
+
+/* curiosidades  */
+.curiosidades {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  border: 1px solid #8bc0e0;
+}
+.curiosidades article {
+  max-width: 1280px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* quienessomos */
+#perfil {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  width: 100%;
+  border: 1px solid #8bc0e0;
+}
+#perfil .autor {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+#perfil .autor p {
+  padding: 0;
+}
+
+/* historia */
+.historia1 {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 16px;
+  border: 1px solid #8bc0e0;
+}
+.historia1 figure {
+  padding: 8px;
+  justify-self: center;
+}
+.historia1 aside {
+  border-left: 1px solid #8bc0e0;
+  padding: 8px;
+}
+.historia1 aside ul {
+  list-style: none;
+}
+.historia1 aside ul li a {
+  text-decoration: none;
+}
+
+/* Personajes */
+.personajes {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  border: 1px #8bc0e0 solid;
+  padding: 16px;
+}
+.personajes div {
+  flex: 1;
+}
+.personajes p {
+  flex: 5;
+}
+.personajes img {
+  width: 150px;
+  height: 150px;
 }
 
 /*# sourceMappingURL=style.css.map */

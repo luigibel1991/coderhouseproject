@@ -1,0 +1,8 @@
+@mixin card-base {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  border: 1px solid #8bc0e0;
+  padding: 16px;
+  background-color: #ebebeb;
+}

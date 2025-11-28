@@ -1,7 +1,7 @@
-@use"../base/variables.scss" ;
-@use"../utilities/extend" ;
+@use"../base/variables" ;
+@use"../utilities/extend";
 header {
-    background-color: $colorheader-footer ;
+    background-color: variables.$colorheader-footer ;
     width: 100%;
     padding: 16px;
     box-sizing: border-box;
