@@ -1,6 +1,6 @@
 @use "../utilities/mixin" as m;
 
-/* main del index */
+
 #contendor {
   max-width: 100%;
   max-height: fit-content;
@@ -28,13 +28,15 @@
 
 #grilla-1 {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* dos columnas iguales */
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   max-width: 1280px;
   margin: 0 auto;
   padding: 20px;
   border: 1px #8bc0e0 solid;
 }
+
+
 
 .card-2 {
   background-color: #f5f5f5;
@@ -43,7 +45,7 @@
   border: 1px #d3ebfd solid;
   padding: 16px;
   position: relative;
-  transition: transform 0.3s ease; // <-- transición suave
+  transition: transform 0.3s ease;
 
   img {
     width: 100%;
@@ -61,15 +63,14 @@
     top: 0;
     background-color: rgb(127, 232, 255);
     opacity: 0;
-    transition: opacity 0.3s ease;
   }
 
   &:hover {
-    transform: scale(1.2);   // <-- APLICÁS EL SCALE AQUÍ
-  }
+    transform: scale(1.2);
 
-  &:hover::after {
-    opacity: 0.2;
+    &:hover::after {
+      opacity: 0.2;
+      cursor: pointer;
+    }
   }
 }
-

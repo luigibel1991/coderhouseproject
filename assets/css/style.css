@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -265,9 +264,6 @@ footer p {
   flex: 1;
   padding: 16px;
 }
-footer {
-  /* CAMBIO IMPORTANTE: social-links ya no está dentro de nav */
-}
 footer .social-links {
   flex: 1;
   text-align: right;
@@ -287,7 +283,6 @@ footer .social-links ul li a img {
   display: block;
 }
 
-/* main del index */
 #contendor {
   max-width: 100%;
   max-height: fit-content;
@@ -316,7 +311,7 @@ footer .social-links ul li a img {
 
 #grilla-1 {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* dos columnas iguales */
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   max-width: 1280px;
   margin: 0 auto;
@@ -348,16 +343,15 @@ footer .social-links ul li a img {
   top: 0;
   background-color: rgb(127, 232, 255);
   opacity: 0;
-  transition: opacity 0.3s ease;
 }
 .card-2:hover {
   transform: scale(1.2);
 }
-.card-2:hover::after {
+.card-2:hover:hover::after {
   opacity: 0.2;
+  cursor: pointer;
 }
 
-/* curiosidades  */
 .curiosidades {
   display: flex;
   flex-direction: column;
@@ -373,7 +367,6 @@ footer .social-links ul li a img {
   flex-direction: column;
 }
 
-/* quienessomos */
 #perfil {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -392,7 +385,6 @@ footer .social-links ul li a img {
   padding: 0;
 }
 
-/* historia */
 .historia1 {
   display: grid;
   grid-template-columns: 4fr 1fr;
@@ -414,7 +406,6 @@ footer .social-links ul li a img {
   text-decoration: none;
 }
 
-/* Personajes */
 .personajes {
   width: 100%;
   display: flex;
