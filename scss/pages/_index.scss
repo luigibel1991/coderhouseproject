@@ -43,6 +43,7 @@
   border: 1px #d3ebfd solid;
   padding: 16px;
   position: relative;
+  transition: transform 0.3s ease; // <-- transición suave
 
   img {
     width: 100%;
@@ -60,10 +61,15 @@
     top: 0;
     background-color: rgb(127, 232, 255);
     opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  &:hover {
+    transform: scale(1.2);   // <-- APLICÁS EL SCALE AQUÍ
   }
 
   &:hover::after {
     opacity: 0.2;
-    cursor: pointer;
   }
 }
+

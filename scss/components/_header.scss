@@ -1,5 +1,6 @@
-@use"../base/variables" ;
+@use"../base/variables";
 @use"../utilities/extend";
+
 header {
     background-color: variables.$colorheader-footer ;
     width: 100%;
@@ -9,7 +10,7 @@ header {
     flex-direction: column;
     justify-content: flex-start;
 
-    /* imagen del header */
+
     img {
         width: 100%;
         height: auto;
@@ -17,7 +18,6 @@ header {
         display: block;
     }
 
-    /* menú hamburguesa */
     .hamburguesa {
         font-size: 32px;
         display: none;
@@ -25,7 +25,7 @@ header {
         margin-left: 0;
     }
 
-    /* top bar */
+
     .top-bar {
         display: flex;
         align-items: center;
@@ -44,7 +44,6 @@ header {
     }
 }
 
-/* NAV (fuera del header porque en tu HTML NO está dentro del header) */
 nav.navegation-menu {
     background-color: #d3ebfd;
     width: 100%;

@@ -22,29 +22,26 @@ footer {
     padding: 16px;
   }
 
-  nav {
+  /* CAMBIO IMPORTANTE: social-links ya no está dentro de nav */
+  .social-links {
     flex: 1;
     text-align: right;
     padding: 16px;
 
-    .social-links {
-      ul {
-        display: flex;
-        justify-content: flex-end;
-        gap: 8px;
-        padding: 0;
-        margin: 0;
-        list-style: none;
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
 
-        li {
-          a {
+      li {
+        a {
+          img {
+            width: 20px;
+            height: 20px;
             display: block;
-
-            img {
-              width: 20px;
-              height: 20px;
-              display: block;
-            }
           }
         }
       }

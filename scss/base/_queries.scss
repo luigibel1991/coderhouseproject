@@ -1,4 +1,3 @@
-/* breakpoint Tablet*/
 @media (max-width: 991px) {
     header .hamburguesa {
         display: block;
@@ -21,7 +20,7 @@
         grid-template-columns: 1fr;
     }
 
-    /* Personajes más compacto */
+
     .personajes {
         flex-direction: column;
         gap: 12px;
@@ -35,14 +34,14 @@
 
     #perfil {
         grid-template-columns: 1fr;
-        /* una columna */
+
         gap: 12px;
     }
 
     .autor {
         padding: 12px;
         text-align: center;
-        /* centra texto y títulos */
+
     }
 
     .autor img {
@@ -59,7 +58,7 @@
         max-height: none;
     }
 
-    /* historia sin la barra lateral */
+
     aside {
         display: none;
     }
@@ -79,7 +78,7 @@
     }
 }
 
-/* Breakpoint Mobile */
+
 @media (max-width: 576px) {
     body {
         font-size: 14px;
@@ -110,7 +109,7 @@
         width: 100%;
     }
 
-    /* Personajes más compacto */
+
     .personajes {
         flex-direction: column;
         gap: 12px;
@@ -129,7 +128,7 @@
 
     #perfil {
         grid-template-columns: 1fr;
-        /* una columna */
+
         gap: 8px;
         border: none;
     }
@@ -147,7 +146,7 @@
         margin: 0 auto;
     }
 
-    /* main historia sin la barra lateral*/
+
     aside {
         display: none;
     }
