@@ -1,12 +1,21 @@
 @media (max-width: 991px) {
 
-
     header .hamburguesa {
         display: block;
     }
 
-    header nav {
+    nav.navegation-menu {
         display: none;
+    }
+
+    nav.navegation-menu.show {
+        display: block;
+    }
+
+    nav.navegation-menu ul {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
     }
 
     .top-bar {
@@ -69,9 +78,8 @@
         text-align: center;
     }
 
-    .social-links ul {
-        justify-content: center;
-        gap: 12px;
+    .social-links ul li a {
+        display: none;
     }
 
     aside {
@@ -79,9 +87,7 @@
     }
 }
 
-
 @media (max-width: 576px) {
-
     body {
         font-size: 14px;
     }
@@ -90,24 +96,31 @@
         display: block;
     }
 
-    header nav {
+    nav.navegation-menu {
         display: none;
+    }
+
+    nav.navegation-menu.show {
+        display: block;
+    }
+
+    nav.navegation-menu ul {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
     }
 
     .top-bar p {
         display: none;
     }
 
-
     #grilla-1 {
         grid-template-columns: 1fr;
     }
 
-
     .card-2 {
         width: 100%;
     }
-
 
     .personajes img {
         width: 120px;
@@ -134,7 +147,6 @@
         width: 70%;
     }
 
-
     footer {
         padding: 8px;
     }
@@ -147,10 +159,8 @@
         text-align: center;
     }
 
-    .social-links ul {
-        gap: 8px;
-        justify-content: center;
+    .social-links ul li a {
+        display: none;
+
     }
-
-
 }

@@ -291,8 +291,16 @@ footer .social-links ul li a img {
   header .hamburguesa {
     display: block;
   }
-  header nav {
+  nav.navegation-menu {
     display: none;
+  }
+  nav.navegation-menu.show {
+    display: block;
+  }
+  nav.navegation-menu ul {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
   }
   .top-bar {
     align-items: center;
@@ -344,9 +352,8 @@ footer .social-links ul li a img {
     padding: 8px 0;
     text-align: center;
   }
-  .social-links ul {
-    justify-content: center;
-    gap: 12px;
+  .social-links ul li a {
+    display: none;
   }
   aside {
     display: none;
@@ -359,8 +366,16 @@ footer .social-links ul li a img {
   header .hamburguesa {
     display: block;
   }
-  header nav {
+  nav.navegation-menu {
     display: none;
+  }
+  nav.navegation-menu.show {
+    display: block;
+  }
+  nav.navegation-menu ul {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
   }
   .top-bar p {
     display: none;
@@ -401,9 +416,8 @@ footer .social-links ul li a img {
     font-size: 1rem;
     text-align: center;
   }
-  .social-links ul {
-    gap: 8px;
-    justify-content: center;
+  .social-links ul li a {
+    display: none;
   }
 }
 
