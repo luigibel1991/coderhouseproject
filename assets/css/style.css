@@ -148,6 +148,7 @@ footer .social-links ul li a img {
   max-width: 100%;
   max-height: fit-content;
   margin: auto;
+  background-color: #fff;
 }
 
 .card {
@@ -206,7 +207,7 @@ footer .social-links ul li a img {
   opacity: 0;
 }
 .card-2:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .card-2:hover:hover::after {
   opacity: 0.2;
@@ -229,6 +230,7 @@ footer .social-links ul li a img {
 }
 
 #perfil {
+  background-color: #fff;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
@@ -247,6 +249,7 @@ footer .social-links ul li a img {
 }
 
 .historia1 {
+  background-color: #fff;
   display: grid;
   grid-template-columns: 4fr 1fr;
   gap: 16px;
@@ -268,6 +271,7 @@ footer .social-links ul li a img {
 }
 
 .personajes {
+  background-color: #fff;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
